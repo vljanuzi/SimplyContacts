@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Simply Contacts</string>
+    <string name="list_view">List View</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="name_hint">Full name</string>
+    <string name="phone_hint">Phone number</string>
+    <string name="name_status_char">Name should be below 100 characters</string>
+    <string name="name_status_letter">Name should only contain letters</string>
+    <string name="name_status_req">Name is required</string>
+    <string name="phone_status_valid">Please enter a valid phone number</string>
+    <string name="phone_status_req">Phone number is required</string>
+    <string name="toast_text">You clicked  %s from your Contact List.</string>
+
+</resources>

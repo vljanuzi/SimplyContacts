@@ -1,0 +1,2 @@
+rootProject.name='Simply Contacts'
+include ':app'
