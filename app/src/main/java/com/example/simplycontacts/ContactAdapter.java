@@ -12,20 +12,20 @@ import java.util.List;
 public class ContactAdapter extends BaseAdapter {
 
     private Context context;
-    private List<Contact> contacts;
+    private List<Contact> contactsList;
 
     public ContactAdapter(Context context, List<Contact> items) {
         this.context = context;
-        this.contacts = items;
+        this.contactsList = items;
     }
 
     @Override
     public int getCount() {
-        return this.contacts.size();
+        return this.contactsList.size();
     }
 
     public Object getItem(int position) {
-        return this.contacts.get(position);
+        return this.contactsList.get(position);
     }
 
     public long getItemId(int position) {
@@ -34,6 +34,7 @@ public class ContactAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+
         if (convertView == null) {
             LayoutInflater inflater = LayoutInflater.from(this.context);
             convertView = inflater.inflate(R.layout.item, parent, false);

@@ -58,8 +58,6 @@ public class MainActivity extends AppCompatActivity {
 
         contactViewModel.getContacts().observe(this, contacts -> {
 
-            //build in adapter
-            //this.adapter = new ArrayAdapter<Contact>(this, android.R.layout.simple_list_item_1, contacts);
 
             //custom adapter
             this.adapter = new ContactAdapter(this, contacts);
@@ -67,12 +65,11 @@ public class MainActivity extends AppCompatActivity {
             this.showContactList();
         });
 
-        //show error messages
-        contactViewModel.statusName.observe(this, statusName -> {
+        contactViewModel.nameStatus.observe(this, statusName -> {
             fullNameField.setError(getString(statusName));
         });
 
-        contactViewModel.statusPhone.observe(this, statusPhone -> {
+        contactViewModel.phoneStatus.observe(this, statusPhone -> {
             phoneNumberField.setError(getString(statusPhone));
         });
     }
